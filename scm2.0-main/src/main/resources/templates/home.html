@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base::parent(~{::#content},~{::title},~{::script})}">
+<head>
+    <title>Home Page</title>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <div id="content" class="pt-16">
+        <!-- Main Container -->
+        <div class="flex flex-col min-h-screen">
+
+            <!-- Hero Section -->
+            <section class="flex-grow flex items-center py-16 justify-center bg-gradient-to-r from-red-400 to-purple-700 dark:from-green-100 dark:to-gray-900">
+                
+                <div class="text-center text-white px-4">
+                    <!-- Heading -->
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
+                        Smart Contact Manager
+                    </h1>
+                    <!-- Subheading -->
+                    <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto animate-fade-in-up">
+                        Organize, manage, and connect with your contacts effortlessly. Simplify your life with our smart contact management solution.
+                    </p>
+                  
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="py-10 pt-10 bg-white dark:bg-gray-800 text-black dark:text-white">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                        Why Choose Us?
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Feature 1 -->
+                        <div class="text-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 dark:bg-gray-700 dark:text-white">
+                            <div class="text-4xl mb-4">📱</div>
+                            <h3 class="text-xl font-semibold mb-2">Easy to Use</h3>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Intuitive interface designed for everyone. Manage your contacts in just a few clicks.
+                            </p>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div class="text-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 dark:bg-gray-700 dark:text-white">
+                            <div class="text-4xl mb-4">🔒</div>
+                            <h3 class="text-xl font-semibold mb-2">Secure & Private</h3>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Your data is safe with us. We use advanced encryption to protect your contacts.
+                            </p>
+                        </div>
+                        <!-- Feature 3 -->
+                        <div class="text-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 dark:bg-gray-700 dark:text-white">
+                            <div class="text-4xl mb-4">🚀</div>
+                            <h3 class="text-xl font-semibold mb-2">Fast & Reliable</h3>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Access your contacts anytime, anywhere. Lightning-fast performance guaranteed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="py-10 bg-gray-100 dark:bg-gray-900">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                        What Our Users Say
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Testimonial 1 -->
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <p class="text-gray-600 dark:text-gray-300 italic">
+                                "This app has completely changed how I manage my contacts. It's so easy to use!"
+                            </p>
+                            <div class="mt-4 flex items-center">
+                                <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold">Vikshit chauhan</h4>
+                                    <p class="text-sm text-gray-500">CEO, Example Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <p class="text-gray-600 dark:text-gray-300 italic">
+                                "I love how secure and private this app is. Highly recommended!"
+                            </p>
+                            <div class="mt-4 flex items-center">
+                                <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold">Vikshit chauhan</h4>
+                                    <p class="text-sm text-gray-500">Marketing Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <p class="text-gray-600 dark:text-gray-300 italic">
+                                "Fast, reliable, and super intuitive. Best contact manager I've ever used!"
+                            </p>
+                            <div class="mt-4 flex items-center">
+                                <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold">Vikshit chauhan</h4>
+                                    <p class="text-sm text-gray-500">Freelancer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="py-20 bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-100 dark:to-gray-700 text-white">
+                <div class="container mx-auto px-4 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-12">
+                        Our Achievements
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Stat 1 -->
+                        <div>
+                            <h3 class="text-5xl font-bold">10K+</h3>
+                            <p class="text-xl">Happy Users</p>
+                        </div>
+                        <!-- Stat 2 -->
+                        <div>
+                            <h3 class="text-5xl font-bold">99%</h3>
+                            <p class="text-xl">Uptime Guarantee</p>
+                        </div>
+                        <!-- Stat 3 -->
+                        <div>
+                            <h3 class="text-5xl font-bold">5M+</h3>
+                            <p class="text-xl">Contacts Managed</p>
+                        </div>
+                       
+                    </div>
+
+                </div>
+               
+            </section>
+
+            <!-- Footer -->
+            <footer class=" bg-purple-500 dark:bg-gray-700 text-white py-8">
+                <div class="container mx-auto text-center">
+                    <p class= " text-white dark:text-gray-3a00">
+                        &copy; 2025 Vikshit chauhan. All rights reserved.
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        console.log("Home page");
+    </script>
+</body>
+</html>

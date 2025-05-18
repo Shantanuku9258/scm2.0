@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base::parent(~{::#content},~{::title},~{::script})}">
+<head>
+   <title>
+    service page
+   </title>
+</head>
+<body>
+    <div id="content" class="pt-16">
+        <!-- Hero Section -->
+        <section class="relative flex items-center justify-center flex-grow py-16 text-white bg-gradient-to-br from-yellow-200 to-purple-700">
+            <div class="text-center px-6">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 animate-fade-in-up">Our Services</h1>
+                <p class="text-lg md:text-xl mb-6 max-w-xl mx-auto animate-fade-in-up">
+                    Unlock the power of Smart Contact Manager with our advanced features designed to make life easier.
+                </p>
+                
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="py-16 bg-white dark:bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-fade-in-up">
+                    Why Choose Us?
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-8 bg-gray-50 rounded-lg shadow-lg text-center hover-scale">
+                        <div class="text-5xl mb-4">📂</div>
+                        <h3 class="text-2xl font-semibold mb-3">Organized Contacts</h3>
+                        <p class="text-gray-600">Keep all your contacts structured and accessible in one place.</p>
+                    </div>
+                    <div class="p-8 bg-gray-50 rounded-lg shadow-lg text-center hover-scale">
+                        <div class="text-5xl mb-4">🔍</div>
+                        <h3 class="text-2xl font-semibold mb-3">Smart Search</h3>
+                        <p class="text-gray-600">Instantly find any contact with our powerful search engine.</p>
+                    </div>
+                    <div class="p-8 bg-gray-50 rounded-lg shadow-lg text-center hover-scale">
+                        <div class="text-5xl mb-4">🔒</div>
+                        <h3 class="text-2xl font-semibold mb-3">100% Secure</h3>
+                        <p class="text-gray-600">Your data is encrypted and completely private.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Highlights -->
+        <section class="py-16 bg-gray-100 dark:bg-gray-700">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-fade-in-up">
+                    Feature Highlights
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="p-6 bg-white rounded-lg shadow-md flex items-center space-x-4 hover-scale">
+                        <div class="text-5xl">➕</div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Add & Manage Contacts</h3>
+                            <p class="text-gray-600">Easily add, update, and delete contacts with one click.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-md flex items-center space-x-4 hover-scale">
+                        <div class="text-5xl">📲</div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Sync Across Devices</h3>
+                            <p class="text-gray-600">Access your contacts anywhere, on any device.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-md flex items-center space-x-4 hover-scale">
+                        <div class="text-5xl">📂</div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Cloud Storage</h3>
+                            <p class="text-gray-600">Store unlimited contacts securely in the cloud.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-md flex items-center space-x-4 hover-scale">
+                        <div class="text-5xl">🚀</div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Lightning Fast</h3>
+                            <p class="text-gray-600">Experience super-fast loading and instant access.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-20 bg-gradient-to-r from-blue-300 to-purple-900 text-white text-center">
+            <h2 class="text-4xl font-bold mb-4 animate-fade-in-up">
+                Ready to Get Started?
+            </h2>
+            <p class="text-lg mb-6 max-w-xl mx-auto animate-fade-in-up">
+                Sign up today and manage your contacts like a pro with Smart Contact Manager.
+            </p>
+            <a href="#" class="px-8 py-3 bg-white text-indigo-700 font-semibold rounded-lg shadow-lg hover:bg-gray-200 transition">
+                Join Now
+            </a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-6">
+            <div class="container mx-auto text-center">
+                <p class="text-gray-400">&copy; 2023 Smart Contact Manager. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        console.log("service page");
+    </script>
+    
+</body>
+</html>

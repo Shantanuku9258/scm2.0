@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+  <head>
+    <title data-th-text="${loggedInUser.name}+' | Dashboard'">Profile Page</title>
+  </head>
+
+  <body>
+    <div id="content">
+      <!-- Sidebar -->
+      <!-- User is logged in: sidebar -->
+      <div th:if="${loggedInUser}">
+        <div data-th-replace="~{user/usersidebar :: usersidebar}"></div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="sm:pl-64 pt-20" style="height: 1000px">
+        <div class="flex justify-center flex-col items-center">
+          <h1 class="text-5xl font-bold">Welcome to Your Dashboard,  <div th:if="${loggedInUser}"></h1>
+          <p class="text-xl mt-2">This is your personalized dashboard for managing contacts and interactions.</p>
+          
+          <!-- Dashboard Stats Section -->
+          <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6 w-full">
+            <div class="bg-blue-500 text-white p-6 rounded-lg shadow-lg text-center">
+              <h2 class="text-3xl font-semibold">Total Contacts</h2>
+              <p class="text-2xl mt-2">3</p>
+            </div>
+            <div class="bg-green-500 text-white p-6 rounded-lg shadow-lg text-center">
+              <h2 class="text-3xl font-semibold">Favorite Contacts</h2>
+              <p class="text-2xl mt-2">1</p>
+            </div>
+            <div class="bg-yellow-500 text-white p-6 rounded-lg shadow-lg text-center">
+              <h2 class="text-3xl font-semibold">Recent Additions</h2>
+              <p class="text-2xl mt-2">0</p>
+            </div>
+          </div>
+
+         
+          <!-- Quick Actions Section -->
+         
+        </div>
+      </div>
+    </div>
+
+    <script>
+      console.log("This is the profile page");
+    </script>
+  </body>
+</html>
